@@ -99,7 +99,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .footer {
@@ -124,6 +123,7 @@ input {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
 }
 
 button {
@@ -150,4 +150,18 @@ button:hover {
   color: #596d48;
   font-weight: bold;
   cursor: pointer;
+}
+
+input[type="password"]:invalid,
+#confirm-password:invalid {
+  border-color: rgb(231, 66, 66);
+}
+
+input:focus {
+  border-color: rgb(44, 114, 219);
+  box-shadow: 2px 2px 5px rgba(54, 106, 185, 0.3);
+}
+
+input:focus:invalid {
+  border-color: rgb(44, 114, 219);
 }
